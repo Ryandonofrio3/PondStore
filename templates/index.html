@@ -1,25 +1,42 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Products</title>
-</head>
-<body>
-  <table>
-    <tr>
-      <th>Number</th>
-      <th>Product</th>
-      <th>Cost</th>
-      <th>Brand</th>
-
-    </tr>
-    {% for product in products %}
-    <tr>
-      <td>{{ product[0] }}</td>
-      <td>{{ product[1] }}</td>
-      <td>{{ product[2] }}</td>
-    </tr>
-    {% endfor %}
-  </table>
-</body>
+  <head>
+    <title>Pond Shop</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Pond Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="about">
+      <h2>About Pond Shop</h2>
+      <p>Pond Shop is your one-stop shop for all your pond needs. We offer a wide range of products to help you create and maintain a beautiful pond in your backyard.</p>
+    </section>
+    <section id="products">
+      <h2>Our Products</h2>
+      <ul>
+        <li>Pond Liners</li>
+        <li>Pond Pumps</li>
+        <li>Pond Filters</li>
+        <li>Pond Lighting</li>
+        <li>Pond Decor</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: info@pondshop.com</p>
+      <p>Phone: 555-555-5555</p>
+      <p>Address: 123 Pond Lane, Anytown USA</p>
+    </section>
+    <footer>
+      <p>Copyright © 2021 Pond Shop</p>
+    </footer>
+  </body>
 </html>
