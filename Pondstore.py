@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    with open('/templatesProducts.csv', 'r') as file:
+    with open('/templates/Products.csv', 'r') as file:
         reader = csv.reader(file)
         products = list(reader)
     return render_template('templates/index.html', products=products)
